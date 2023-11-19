@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useUserContext } from '../Components/UserProvider';
 import { useNavigate } from 'react-router-dom';
-
+import ecodeLogo from '../assets/ecode.png';
 
 function NavBar() {
 
@@ -18,7 +18,7 @@ function NavBar() {
     return (
         <header className='NavBar'>
             {/* cambio el texto Bonos por el logo con link */}
-            <Link to="/" ><img src="http://ecode.es/assets/ecode.png" alt="Ecode Logo" className="logo" /></Link>
+            <Link to="/" ><img src={ecodeLogo} alt="Ecode Logo" className="logo" /></Link>
             <nav>
                 <Link to="/about-us" >About Us</Link>
                 <Link to="/social-impact" >Social Impact</Link>

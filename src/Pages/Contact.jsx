@@ -1,6 +1,8 @@
 
 import React from 'react';
 import '../App.css';
+import ecodeLengua from '../assets/lengua.png';
+
 
 function Contact() {
 
@@ -10,7 +12,7 @@ function Contact() {
     <div className="contact-container">
       <h1 className="contact-title">Contact Us</h1>
       <img 
-        src="http://ecode.es/assets/lengua.png" 
+        src={ecodeLengua} 
         alt="Contact Us" 
         className="contact-image"
       />

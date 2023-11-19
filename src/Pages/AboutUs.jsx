@@ -1,12 +1,13 @@
 import React from 'react';
 import '../App.css';
+import ecodeLogo from '../assets/ecode.png';
 
 function AboutUs() {
   return (
     <div className="content-below-navbar">
       <h1 className="page-title">About Us / Trust Us</h1>
       <img 
-        src="http://ecode.es/assets/ecode.png" // URL de la imagen
+        src={ecodeLogo} // URL de la imagen o imagen de assets
         alt="About Us" 
         className="page-image"
       />

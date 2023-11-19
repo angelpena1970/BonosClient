@@ -1,6 +1,8 @@
 import React from 'react'
 import "../App.css"
 import { Link } from 'react-router-dom'
+import ecodeLengua from '../assets/lengua.png';
+
 
 function ProjectCard({project}) {
   return (
@@ -12,7 +14,7 @@ function ProjectCard({project}) {
             {/* meto el path que estaba en css con un d: */}
             <path d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
           </svg>                     
-          <img className="card__thumb" src="http://ecode.es/assets/lengua.png" alt="" />
+          <img className="card__thumb" src={ecodeLengua} alt="" />
           <div className="card__header-text">
             <h3 className="card__title">{project.name}</h3>            
             <span className="card__status">Goal: ${project.goal}</span>

@@ -1,25 +1,14 @@
-/* import React from 'react'
-
-function SocialImpact() {
-  return (
-    <div className="content-below-navbar">
-
-      <div>Social Impact</div>
-    </div>
-  )
-}
-
-export default SocialImpact */
-
 import React from 'react';
 import '../App.css';
+import SocialImpactInvest from '../assets/Social-Impact.png';
+
 
 function SocialImpact() {
   return (
     <div className="content-below-navbar">
       <h1 className="page-title">"Invest, Impact, Transform"</h1>
       <img 
-        src="http://ecode.es/assets/Social-Impact.png" // URL de la imagen
+        src={SocialImpactInvest} // URL de la imagen o imagen de assets
         alt="Social Impact" 
         className="page-image"
       />

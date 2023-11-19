@@ -5,6 +5,7 @@ import '../App.css';
 import ProjectCard from '../Components/ProjectCard';
 import { useUserContext } from '../Components/UserProvider';
 
+
 function Home() {
   const [projects, setProjects] = useState([])
 
