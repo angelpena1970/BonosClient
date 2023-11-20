@@ -175,6 +175,11 @@
   padding-left: 30px;
   padding-right: 30px;
   align-items: center;
+  /* Esto asegura que la barra de navegación se mantenga sobre otros elementos */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .NavBar nav {
@@ -189,17 +194,44 @@
     height: auto;
   }
 
-/* Esto asegura que la barra de navegación se mantenga sobre otros elementos */
-.NavBar {
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 1000;
-  }
-
 /* Para bajar el contenido de las paginas y que el NavBar no oculte nada */
 .content-below-navbar {
   margin-top: 1rem; /* Ajusta a la altura de tu NavBar */
+}
+
+.hamburger {
+  display: none; /* Ocultar por defecto, se mostrará en el media query */
+  cursor: pointer;
+}
+
+/* Media query para dispositivos móviles; NAVBAR HAMBURGUESA */
+@media (max-width: 768px) {
+  .logo {
+    width: 175px; /* Ajusta el tamaño del logo para móviles */
+    height: auto; /* Mantiene la proporción */
+  }
+
+  .hamburger {
+    display: block; /* Mostrar el botón de hamburguesa en móviles */
+    font-size: 1.3rem; /* Aumenta el tamaño del texto del botón de menú */
+    padding: 10px 20px; /* Ajusta el padding para hacer el botón más grande */
+  }
+
+  .NavBar nav {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #a09d9e;
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .NavBar nav.expanded {
+    display: flex; /* Mostrar el menú cuando está expandido */
+  }
 }
   
   

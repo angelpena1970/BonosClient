@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { useUserContext } from '../Components/UserProvider';
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +9,7 @@ function NavBar() {
 
     const {user, setUser} = useUserContext()
     const navigate = useNavigate()
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     function logOut(){
         setUser(null);
@@ -17,10 +19,15 @@ function NavBar() {
 
     return (
         <header className='NavBar'>
-            {/* cambio el texto Bonos por el logo con link */}
-            <Link to="/" ><img src={ecodeLogo} alt="Ecode Logo" className="logo" /></Link>
-            <nav>
-                <Link to="/about-us" >About Us</Link>
+            <Link to="/" className="brand-logo">
+                <img src={ecodeLogo} alt="Ecode Logo" className="logo" />
+            </Link>
+            <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
+                {/* Aquí iría el icono de hamburguesa */}
+                MENU
+            </button>
+            <nav className={`navigation-menu ${isNavExpanded ? 'expanded' : ''}`}>
+            <Link to="/about-us" >About Us</Link>
                 <Link to="/social-impact" >Social Impact</Link>
                 <Link to="/contact" >Contact Us</Link>
                 {

@@ -41,7 +41,7 @@ function Home() {
   return (
     <div className="content-below-navbar">
       <div>
-        <h1>Bonos</h1>
+        <h1 className="page-title">"Bonos"</h1>
         {user && <h3>Welcome, {user.email}!</h3>}
         <div className="projectsContainer">
           <div className={`projectsColumn category-0`}>{renderProjects(projectsByCategory[0])}</div>
