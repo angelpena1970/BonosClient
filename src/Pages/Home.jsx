@@ -44,11 +44,19 @@ function Home() {
         <h1 className="page-title">"Bonos"</h1>
         {user && <h3>Welcome, {user.email}!</h3>}
         <div className="projectsContainer">
-          <div className={`projectsColumn category-0`}>{renderProjects(projectsByCategory[0])}</div>
-          <div className={`projectsColumn category-1`}>{renderProjects(projectsByCategory[1])}</div>
-          <div className={`projectsColumn category-2`}>{renderProjects(projectsByCategory[2])}</div>
+          <div className={`projectsColumn category-0`}>
+            <h2 className="column-title">Housing</h2> {/* Título para la columna de la categoría 0 */}
+            {renderProjects(projectsByCategory[0])}
+          </div>
+          <div className={`projectsColumn category-1`}>
+            <h2 className="column-title">Creating Jobs</h2> {/* Título para la columna de la categoría 1 */}
+            {renderProjects(projectsByCategory[1])}
+          </div>
+          <div className={`projectsColumn category-2`}>
+            <h2 className="column-title">Education</h2> {/* Título para la columna de la categoría 2 */}
+            {renderProjects(projectsByCategory[2])}
+          </div>
         </div>
-
       </div>
     </div>
   );
