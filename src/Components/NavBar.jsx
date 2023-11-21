@@ -15,11 +15,17 @@ function NavBar() {
         setUser(null);
         localStorage.removeItem('user')
         navigate('/')
+        setIsNavExpanded(false); // Asegúrate de cerrar el menú también cuando se desconecta el usuario
+    }
+
+    // Función para manejar el cierre del menú
+    const closeMenu = () => {
+        setIsNavExpanded(false);
     }
 
     return (
         <header className='NavBar'>
-            <Link to="/" className="brand-logo">
+            <Link to="/" className="brand-logo" onClick={closeMenu}>
                 <img src={ecodeLogo} alt="Ecode Logo" className="logo" />
             </Link>
             <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
@@ -27,9 +33,9 @@ function NavBar() {
                 MENU
             </button>
             <nav className={`navigation-menu ${isNavExpanded ? 'expanded' : ''}`}>
-            <Link to="/about-us" >About Us</Link>
-                <Link to="/social-impact" >Social Impact</Link>
-                <Link to="/contact" >Contact Us</Link>
+            <Link to="/about-us" onClick={closeMenu}>About Us</Link>
+                <Link to="/social-impact" onClick={closeMenu}>Social Impact</Link>
+                <Link to="/contact" onClick={closeMenu}>Contact Us</Link>
                 {
                     user ?
                         <button onClick={logOut}>Logout</button>
@@ -37,8 +43,8 @@ function NavBar() {
                         :
 
                         <>
-                            <Link to="/login" >Login</Link>
-                            <Link to="/register" >Register</Link>
+                            <Link to="/login" onClick={closeMenu}>Login</Link>
+                            <Link to="/register" onClick={closeMenu}>Register</Link>
                         </>
                 }
 
