@@ -1,13 +1,13 @@
 import React from 'react';
 import '../App.css';
-import ecodeLogo from '../assets/ecode.png';
+import refutokenLogo from '../assets/refutoken.png';
 
 function AboutUs() {
   return (
     <div className="content-below-navbar">
       <h1 className="page-title">About Us / Trust Us</h1>
       <img 
-        src={ecodeLogo} // URL de la imagen o imagen de assets
+        src={refutokenLogo} // URL de la imagen o imagen de assets
         alt="About Us" 
         className="page-image"
       />

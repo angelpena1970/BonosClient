@@ -36,22 +36,22 @@ function Contact() {
       </div>
 
       {/* Sección de Aisylum */}
-      <div className="contact-section">
-        <h2 className="contact-subtitle">Aisylum</h2>
+      {/* <div className="contact-section">
+        <h2 className="contact-subtitle">Aisylum</h2> */}
         {/* Descripción de Aisylum y cómo se relaciona con la ONG */}
-      </div>
+      {/* </div> */}
 
       {/* Sección de Impactoken */}
-      <div className="contact-section">
-        <h2 className="contact-subtitle">Impactoken</h2>
+      {/* <div className="contact-section">
+        <h2 className="contact-subtitle">Impactoken</h2> */}
         {/* Información sobre Impactoken y su uso */}
-      </div>
+      {/* </div> */}
 
       {/* Sección de Solidaridao */}
-      <div className="contact-section">
-        <h2 className="contact-subtitle">Solidaridao</h2>
+     {/*  <div className="contact-section">
+        <h2 className="contact-subtitle">Solidaridao</h2> */}
         {/* Información y detalles sobre Solidaridao */}
-      </div>
+      {/* </div> */}
     </div>
   );
 }

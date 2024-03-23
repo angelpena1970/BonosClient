@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { useUserContext } from '../Components/UserProvider';
 import { useNavigate } from 'react-router-dom';
-import ecodeLogo from '../assets/ecode.png';
+import refutokenLogo from '../assets/refutoken.png';
 
 function NavBar() {
 
@@ -26,7 +26,7 @@ function NavBar() {
     return (
         <header className='NavBar'>
             <Link to="/" className="brand-logo" onClick={closeMenu}>
-                <img src={ecodeLogo} alt="Ecode Logo" className="logo" />
+                <img src={refutokenLogo} alt="Refutoken Logo" className="logo" />
             </Link>
             <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
                 {/* Aquí iría el icono de hamburguesa */}
