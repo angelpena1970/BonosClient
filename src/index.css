@@ -7,10 +7,3 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 
 }
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "333c3eea-5f86-49f3-a110-76daa4e92010",
-        apiHost: "http://localhost:3000",
-    })
-</script>

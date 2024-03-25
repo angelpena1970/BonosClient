@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route } from "react-router-dom"
 import Home from "./Pages/Home"
 import Checkout from "./Pages/Checkout"
@@ -8,6 +9,7 @@ import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import SocialImpact from "./Pages/SocialImpact"
 import NavBar from "./Components/NavBar"
+import { BubbleChat } from 'flowise-embed-react';
 import './App.css';
 
 
@@ -29,6 +31,7 @@ function App() {
         <Route path="/social-impact" element={<SocialImpact />} />
       </Routes>
     </div>
+    <BubbleChat chatflowid="333c3eea-5f86-49f3-a110-76daa4e92010" apiHost="http://localhost:3000" />
 
     </>
    
