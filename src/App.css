@@ -405,4 +405,44 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000; /* Asegúrate de que el z-index sea suficientemente alto para estar sobre otros elementos */
+  padding: 10px 20px; /* Aumenta el relleno para hacerlo más grande */
+  background-color: #007bff; /* Usa el color que prefieras */
+  color: white; /* Cambia el color del texto si es necesario */
+  border: none;
+  border-radius: 50px; /* Borde redondeado para el botón */
+  font-size: 1.2em; /* Letra más grande */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para el botón */
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s; /* Transición suave para hover y click */
+}
+
+.chat-button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón por encima */
+  transform: scale(1.05); /* Ligero aumento de tamaño al pasar el ratón por encima */
+}
+
+.chat-button:active {
+  transform: scale(0.95); /* Efecto de clic */
+}
+
+/* Ajustes para el cuadro de diálogo que aparece después de hacer clic en el botón */
+.dialog-box {
+  position: fixed;
+  right: 20px; /* Alineado a la derecha */
+  top: 50%; /* Centrado verticalmente */
+  transform: translateY(-50%); /* Ajuste para centrar exactamente en la mitad */
+  z-index: 1001; /* Asegúrate de que esté por encima del botón */
+  background-color: white; /* o cualquier otro color de fondo que prefieras */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  /* Establece un ancho máximo o un ancho específico según tus necesidades */
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Estilos para el botón de cerrar dentro del dialog-box */
+.dialog-box button {
+  /* Estilos para el botón de cerrar si es necesario */
 }

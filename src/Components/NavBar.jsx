@@ -29,6 +29,13 @@ function NavBar() {
         console.log("Abrir chat");
     }
 
+    // Cuadro dialogo del chat
+    const [showDialog, setShowDialog] = useState(false);
+
+    const handleChatClick = () => {
+        setShowDialog(!showDialog); // Alternar la visibilidad del cuadro de diálogo
+    };
+
     return (
         <header className='NavBar'>
             <Link to="/" className="brand-logo" onClick={closeMenu}>
@@ -58,6 +65,20 @@ function NavBar() {
                     CHAT
                 </button>
             </nav>
+            
+            {/* Botón de chat aquí */}
+            <button onClick={handleChatClick} className="chat-button">
+                CHAT
+            </button>
+
+            {showDialog && (
+                <div className="dialog-box">
+                    {/* Contenido de tu cuadro de diálogo */}
+                    Aquí puedes poner el contenido de tu chat.
+                    <button onClick={() => setShowDialog(false)}>Cerrar</button>
+                </div>
+            )}
+
         </header>
     )
 }
