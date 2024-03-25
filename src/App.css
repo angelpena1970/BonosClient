@@ -398,3 +398,11 @@
   gap: 25px;
 
 }
+
+/* BOTON PARA CHAT*/
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegúrate de que el z-index sea suficientemente alto para estar sobre otros elementos */
+}
