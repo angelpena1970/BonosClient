@@ -12,10 +12,6 @@ import './App.css';
 
 
 function App() {
-  // Función para manejar el evento de clic del botón (Aquí iría la lógica para abrir tu chat)
-  const handleChatButtonClick = () => {
-    alert("Aquí deberías abrir el chat.");
-  };
 
   return (
     <>
@@ -32,7 +28,6 @@ function App() {
         <Route path="/social-impact" element={<SocialImpact />} />
       </Routes>
     </div>
-    <button className="chat-button" onClick={handleChatButtonClick}>CHAT</button>
 
     </>
    

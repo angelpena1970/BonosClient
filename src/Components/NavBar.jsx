@@ -23,6 +23,12 @@ function NavBar() {
         setIsNavExpanded(false);
     }
 
+    // Función para manejar el clic del botón de chat
+    const handleChatClick = () => {
+        // Aquí puedes colocar la lógica para abrir tu chat
+        console.log("Abrir chat");
+    }
+
     return (
         <header className='NavBar'>
             <Link to="/" className="brand-logo" onClick={closeMenu}>
@@ -47,7 +53,10 @@ function NavBar() {
                             <Link to="/register" onClick={closeMenu}>Register</Link>
                         </>
                 }
-
+                {/* Botón de chat aquí */}
+                <button onClick={handleChatClick} className="chat-button">
+                    CHAT
+                </button>
             </nav>
         </header>
     )
