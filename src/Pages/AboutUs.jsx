@@ -35,7 +35,7 @@ function AboutUs() {
           <li>Proyecto 1</li>
           <li>Proyecto 2</li>
           <li>Proyecto 3</li>
-          {/* Agrega más elementos <li> según sea necesario */}
+          {/* Agregar más elementos <li> según sea necesario */}
         </ol>
       </div>
     </div>
