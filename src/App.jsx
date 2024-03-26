@@ -28,6 +28,10 @@ function App() {
         <Route path="/social-impact" element={<SocialImpact />} />
       </Routes>
     </div>
+    <button onClick={handleChatClick} className="chat-button">
+        CHAT
+    </button>
+
 
     </>
    
