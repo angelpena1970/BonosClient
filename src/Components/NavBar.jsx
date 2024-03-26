@@ -53,7 +53,10 @@ function NavBar() {
                             <Link to="/register" onClick={closeMenu}>Register</Link>
                         </>
                 }
-
+                {/* Botón de chat aquí */}
+                <button onClick={handleChatClick} className="chat-button">
+                    CHAT
+                </button>
             </nav>
         </header>
     )

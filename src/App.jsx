@@ -29,7 +29,7 @@ function App() {
       </Routes>
     </div>
     <button onClick={handleChatClick} className="chat-button">
-        CHAT
+        CHAr
     </button>
 
 
